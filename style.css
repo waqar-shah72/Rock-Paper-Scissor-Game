@@ -1,0 +1,74 @@
+body{
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);;
+}
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+}
+#stone{
+    color: white;
+    border-color: #020024;
+    border:100px ;
+margin-right: 20px;
+    height: 50px;
+    width: 100px;
+    background: rgb(0,36,16);
+    background: linear-gradient(90deg, rgba(0,36,16,1) 0%, rgba(9,56,121,1) 35%, rgba(0,99,255,1) 100%);    border-radius: 20px ;solid-color: white ;
+}
+#stone:hover{
+    border-color: #16FF00;
+    height: 60px;
+    width: 120px;
+}
+#paper{
+    color: white;
+    border-color: #020024;
+    border:100px ;
+    margin-left:20px ;
+    height: 50px;
+    width: 100px;
+    background: rgb(0,36,16);
+    background: linear-gradient(90deg, rgba(0,36,16,1) 0%, rgba(9,56,121,1) 35%, rgba(0,99,255,1) 100%);    border-radius: 20px  ;
+}
+#paper:hover{
+    border-color: #16FF00;
+    height: 60px;
+    width: 120px;
+}
+#scissor{
+    color: white;
+    border-color: #020024;
+    border:100px ;
+    margin-left: 40px;
+    height: 50px;
+    width: 100px;
+    background: rgb(0,36,16);
+    background: linear-gradient(90deg, rgba(0,36,16,1) 0%, rgba(9,56,121,1) 35%, rgba(0,99,255,1) 100%);    border-radius: 20px  ;
+}
+#scissor:hover{
+    border-color: #16FF00;
+    height: 60px;
+    width: 120px;
+}
+#answer{
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    padding-left: 45%;
+}
+#myGuess{
+    color: wheat;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding-left: 45%;
+
+}

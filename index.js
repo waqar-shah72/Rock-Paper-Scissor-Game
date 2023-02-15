@@ -7,7 +7,27 @@ function submit() {
     let scissor = 2;
     let userGuess;
     let guessOfGame = Math.floor(Math.random() * 3)
-    console.log(guessOfGame)
+    if (guessOfGame===0){
+        let winTag =document.createElement("p")
+        let winResult = document.createTextNode("My one is stone" )
+        winTag.appendChild(winResult);
+        let element = document.getElementById('myGuess')
+        element.appendChild(winTag)
+
+    } else if(guessOfGame===1){
+        let winTag =document.createElement("p")
+        let winResult = document.createTextNode("My one is Paper")
+        winTag.appendChild(winResult);
+        let element = document.getElementById('myGuess')
+        element.appendChild(winTag)
+
+    }else if (guessOfGame===2){
+        let winTag =document.createElement("p")
+        let winResult = document.createTextNode("My one is Scissor")
+        winTag.appendChild(winResult);
+        let element = document.getElementById('myGuess')
+        element.appendChild(winTag)
+    }
 
     // userGuess = document.getElementById("stone").value
      // userGuess = document.getElementById("paper").value
@@ -15,11 +35,26 @@ function submit() {
     if (document.getElementById("stone").value === "stone") {
         userGuess = stone
         console.log(userGuess)
+         winTag =document.createElement("p")
+        let winResult = document.createTextNode("You is Stone")
+        winTag.appendChild(winResult);
+        let element = document.getElementById('myGuess')
+        element.appendChild(winTag)
     }
     else if (document.getElementById("paper").value === "paper") {
         userGuess = paper
+         winTag =document.createElement("p")
+        let winResult = document.createTextNode("you is Paper")
+        winTag.appendChild(winResult);
+        let element = document.getElementById('answer')
+        element.appendChild(winTag)
     } else if (document.getElementById("scissor").value === "scissor") {
         userGuess = scissor
+         winTag =document.createElement("p")
+        let winResult = document.createTextNode("You is Scissor")
+        winTag.appendChild(winResult);
+        let element = document.getElementById('myGuess')
+        element.appendChild(winTag)
     }
     if (guessOfGame === userGuess) {
         let winTag =document.createElement("p")
@@ -48,7 +83,9 @@ function submit() {
             let winResult = document.createTextNode("Wow u win")
             winTag.appendChild(winResult);
             let element = document.getElementById('answer')
-            element.appendChild(winTag)                } else {
+            element.appendChild(winTag)
+
+        } else {
             let winTag =document.createElement("p")
             let winResult = document.createTextNode("U Lose ")
             winTag.appendChild(winResult);
@@ -67,8 +104,9 @@ function submit() {
             let winResult = document.createTextNode("U Lose ")
             winTag.appendChild(winResult);
             let element = document.getElementById('answer')
-            element.appendChild(winTag)           }
+            element.appendChild(winTag)
+        }
     }
 
-    
+
 }
